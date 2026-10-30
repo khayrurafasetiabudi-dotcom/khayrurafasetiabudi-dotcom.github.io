@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SYALALA GAME</title>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #08000f;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.hero {
+  min-height: 70vh;
+  background:
+    linear-gradient(#0005, #08000fe8),
+    url("FOTO-INTERIOR.jpg") center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 30px;
+}
+
+h1 {
+  font-size: clamp(55px, 12vw, 110px);
+  margin: 0;
+  text-shadow:
+    0 0 25px #c000ff,
+    0 0 50px #ff1493;
+  letter-spacing: 3px;
+}
+
+.hero h2 {
+  font-size: 38px;
+  color: #e55cff;
+  letter-spacing: 12px;
+  margin: 5px 0 15px;
+}
+
+.hero p {
+  font-size: 20px;
+  letter-spacing: 3px;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 14px 28px;
+  border-radius: 12px;
+  background: linear-gradient(90deg, #7020ff, #f020c0);
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+section {
+  max-width: 1100px;
+  margin: auto;
+  padding: 55px 20px;
+}
+
+.title {
+  text-align: center;
+  font-size: 38px;
+  margin: 0 0 10px;
+  color: #e66cff;
+  text-shadow: 0 0 15px #8b00ff;
+}
+
+.sub {
+  text-align: center;
+  color: #cbb8d8;
+  margin-bottom: 30px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.card {
+  background: linear-gradient(#1b0730, #0b0314);
+  border: 1px solid #8d32d9;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 0 22px #8a00ff33;
+}
+
+.card img {
+  width: 100%;
+  height: 220px;
+  object-fit: contain;
+  background: white;
+}
+
+.card div {
+  padding: 20px;
+  text-align: center;
+}
+
+.card h3 {
+  font-size: 30px;
+  margin: 0;
+}
+
+.price {
+  font-size: 30px;
+  color: #38aaff;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.facilities {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.fac {
+  padding: 28px;
+  text-align: center;
+  background: #13051e;
+  border: 1px solid #7130a0;
+  border-radius: 18px;
+}
+
+.fac .ico {
+  font-size: 42px;
+}
+
+.fac h3 {
+  margin: 10px 0;
+}
+
+.fac p {
+  color: #cbb8d8;
+}
+
+.about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+  align-items: center;
+}
+
+.about img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.box {
+  background: #13051e;
+  border: 1px solid #7130a0;
+  border-radius: 20px;
+  padding: 28px;
+}
+
+.box li {
+  margin: 13px 0;
+}
+
+footer {
+  text-align: center;
+  padding: 30px;
+  color: #a997b2;
+  border-top: 1px solid #281033;
+}
+
+footer a {
+  color: #8fcfff;
+}
+
+@media (max-width: 750px) {
+  .cards,
+  .facilities,
+  .about {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header class="hero">
+  <div>
+    <p> PLAY • RELAX • ENJOY </p>
+
+    <h1>SYALALA</h1>
+
+    <h2>GAME</h2>
+
+    <p>Tempat Favorit Para Gamers</p>
+
+    <a class="btn" href="#harga">
+      LIHAT HARGA
+    </a>
+  </div>
+</header>
+
+
+<section id="harga">
+
+  <h2 class="title">
+    HARGA RENTAL
+  </h2>
+
+  <p class="sub">
+    Main puas dengan console favoritmu.
+  </p>
+
+  <div class="cards">
+
+    <!-- PS3 -->
+    <div class="card">
+
+      <img
+        src="FOTO-PS3.jpg"
+        alt="PlayStation 3"
+      >
+
+      <div>
+
+        <h3>PS3</h3>
+
+        <div class="price">
+          Rp 10.000
+        </div>
+
+        <b>PER JAM</b>
+
+      </div>
+
+    </div>
+
+
+    <!-- PS4 -->
+    <div class="card">
+
+      <img
+        src="FOTO-PS4.jpg"
+        alt="PlayStation 4"
+      >
+
+      <div>
+
+        <h3>PS4</h3>
+
+        <div class="price">
+          Rp 20.000
+        </div>
+
+        <b>PER JAM</b>
+
+      </div>
+
+    </div>
+
+
+    <!-- PS5 -->
+    <div class="card">
+
+      <img
+        src="FOTO-PS5.jpg"
+        alt="PlayStation 5"
+      >
+
+      <div>
+
+        <h3>PS5</h3>
+
+        <div class="price">
+          Rp 40.000
+        </div>
+
+        <b>PER JAM</b>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<section>
+
+  <h2 class="title">
+    FASILITAS
+  </h2>
+
+  <p class="sub">
+    Nyaman untuk bermain bersama teman.
+  </p>
+
+  <div class="facilities">
+
+    <div class="fac">
+
+      <div class="ico">❄️</div>
+
+      <h3>
+        Ruangan Ber-AC
+      </h3>
+
+      <p>
+        Ruangan sejuk dan nyaman.
+      </p>
+
+    </div>
+
+
+    <div class="fac">
+
+      <div class="ico">📺</div>
+
+      <h3>
+        TV Besar
+      </h3>
+
+      <p>
+        Layar besar untuk pengalaman
+        bermain lebih seru.
+      </p>
+
+    </div>
+
+
+    <div class="fac">
+
+      <div class="ico">🛋️</div>
+
+      <h3>
+        Tempat Nyaman
+      </h3>
+
+      <p>
+        Tempat duduk nyaman untuk
+        bermain dan bersantai.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<section class="about">
+
+  <img
+    src="FOTO-INTERIOR.jpg"
+    alt="Interior SYALALA GAME"
+  >
+
+  <div class="box">
+
+    <h2
+      class="title"
+      style="text-align:left"
+    >
+      SYALALA GAME
+    </h2>
+
+    <ul>
+
+      <li>
+        Rental PS3, PS4, dan PS5
+      </li>
+
+      <li>
+        Harga mulai Rp 10.000/jam
+      </li>
+
+      <li>
+        Ruangan ber-AC
+      </li>
+
+      <li>
+        TV besar
+      </li>
+
+      <li>
+        Tempat yang nyaman
+      </li>
+
+    </ul>
+
+  </div>
+
+</section>
+
+
+<section>
+
+  <div
+    class="box"
+    style="text-align:center"
+  >
+
+    <h2 class="title">
+      SIAP MAIN?
+    </h2>
+
+    <p>
+      Datang dan nikmati waktu bermainmu
+      di SYALALA GAME.
+    </p>
+
+    <a
+      class="btn"
+      href="#harga"
+    >
+      MULAI MAIN
+    </a>
+
+  </div>
+
+</section>
+
+
+<footer>
+
+<!-- FORM BOOKING -->
+<section class="booking-section" id="booking">
+    <h2>🎮 FORM BOOKING</h2>
+    <p>Isi data di bawah untuk melakukan pemesanan.</p>
+
+    <form class="form-booking" onsubmit="kirimWhatsApp(event)">
+
+        <div class="form-group">
+            <label>Nama</label>
+            <input type="text" id="nama" placeholder="Masukkan nama kamu" required>
+        </div>
+
+        <div class="form-group">
+            <label>Nomor WhatsApp</label>
+            <input type="tel" id="nomor" placeholder="08xxxxxxxxxx" required>
+        </div>
+
+        <div class="form-group">
+            <label>Pilih Konsol</label>
+            <select id="konsol" required>
+                <option value="">-- Pilih Konsol --</option>
+                <option value="PS3">PS3</option>
+                <option value="PS4">PS4</option>
+                <option value="PS5">PS5</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>Tanggal Main</label>
+            <input type="date" id="tanggal" required>
+        </div>
+
+        <div class="form-group">
+            <label>Jam Mulai</label>
+            <input type="time" id="jam" required>
+        </div>
+
+        <div class="form-group">
+            <label>Durasi</label>
+            <select id="durasi" required>
+                <option value="">-- Pilih Durasi --</option>
+                <option value="1 Jam">1 Jam</option>
+                <option value="2 Jam">2 Jam</option>
+                <option value="3 Jam">3 Jam</option>
+                <option value="4 Jam">4 Jam</option>
+                <option value="5 Jam">5 Jam</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>Catatan</label>
+            <textarea id="catatan" rows="4"
+                placeholder="Tambahkan catatan jika ada..."></textarea>
+        </div>
+
+        <button type="submit" class="form-submit">
+            📲 PESAN VIA WHATSAPP
+        </button>
+
+    </form>
+</section>
+
+<style>
+.booking-section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.form-booking {
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 28px;
+    background: #160020;
+    border: 2px solid #b44cff;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px #0006;
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: white;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #b44cff;
+    border-radius: 10px;
+    background: #250035;
+    color: white;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #e000ff;
+    box-shadow: 0 0 10px #b44cff;
+}
+
+.form-submit {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(90deg, #b44cff, #e000ff);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.form-submit:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 20px #b44cff;
+}
+</style>
+
+<script>
+function kirimWhatsApp(event) {
+    event.preventDefault();
+
+    const nama = document.getElementById("nama").value;
+    const nomor = document.getElementById("nomor").value;
+    const konsol = document.getElementById("konsol").value;
+    const tanggal = document.getElementById("tanggal").value;
+    const jam = document.getElementById("jam").value;
+    const durasi = document.getElementById("durasi").value;
+    const catatan = document.getElementById("catatan").value;
+
+    const pesan =
+        "🎮 *BOOKING SYALALA GAME*%0A%0A" +
+        "👤 Nama: " + nama + "%0A" +
+        "📱 WhatsApp: " + nomor + "%0A" +
+        "🎮 Konsol: " + konsol + "%0A" +
+        "📅 Tanggal: " + tanggal + "%0A" +
+        "⏰ Jam Mulai: " + jam + "%0A" +
+        "⌛ Durasi: " + durasi + "%0A" +
+        "📝 Catatan: " + (catatan || "-") +
+        "%0A%0AMohon konfirmasi booking saya.";
+
+    window.open(
+        "https://wa.me/?text=" + pesan,
+        "_blank"
+    );
+}
+</script>
+  
+<b>SYALALA GAME</b>
+
+  <br>
+
+  Play • Relax • Enjoy
+
+  <br><br>
+
+  <strong>
+    Sumber Foto & Referensi
+  </strong>
+
+  <br>
+
+  PS3:
+  <a
+    href="https://id.wikipedia.org/wiki/PlayStation_3"
+    target="_blank"
+  >
+    Wikipedia – PlayStation 3
+  </a>
+
+  <br>
+
+  PS4:
+  <a
+    href="https://www-ifixit-com.translate.goog/Device/PlayStation_4?_x_tr_sl=en&_x_tr_tl=id&_x_tr_hl=id&_x_tr_pto=imgs"
+    target="_blank"
+  >
+    iFixit – PlayStation 4
+  </a>
+
+  <br>
+
+  PS5:
+  <a
+    href="https://rekomendit.detik.com/hobi-dan-mainan/3156/sony-ps5-slim-disc-edition-konsol-terlaris-ini-masih-layak-dibeli-2026"
+    target="_blank"
+  >
+    Rekomendit Detik – Sony PS5 Slim Disc Edition
+  </a>
+
+  <br>
+
+  Interior:
+  <a
+    href="https://omahalit.com/desain-rental-ps-kekinian/"
+    target="_blank"
+  >
+    Omah Alit – Desain Rental PS Kekinian
+  </a>
+
+</footer>
+
+</body>
+</html>
